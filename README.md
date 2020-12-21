@@ -25,6 +25,24 @@ The game will utilise responsive design and will be playable in the browser in l
 
 4. As a player, I need to understand the instructions for how to play the game, in order to easily play and enjoy it.
 
+### UX Framework
+
+**1. Strategy**
+
+Pokemon match up is a simple matching pairs game created using HTML, CSS, and JavaScript for the purposes of entertainment.
+
+
+**2. Scope**
+
+The scope of the website is to provide an easily understandable, interactive, and enjoyable experience for visitors of the website who aim to play the game.
+
+
+**3. Structure**
+
+**4. Skeleton**
+
+**5. Surface**
+
 ### Wireframe
 
 [Wireframe PDF made in Balsamiq](./wireframe/MS2-wireframe.pdf)
@@ -35,8 +53,28 @@ The game will utilise responsive design and will be playable in the browser in l
 
 ### Upcoming Features
 
+1. Landing page
+2. User interface
+3. Pop up windows
+4. Main game
+5. Countdown timer
+6. Images
+7. Leaderboard
+
 ## Technologies Used
+
+- HTML5
+- CSS3
+- JavaScript
 
 ## Testing
 
+## Deployment
+
 ## Acknowledgements
+
+### Content
+
+### Media
+
+### Acknowledgements
