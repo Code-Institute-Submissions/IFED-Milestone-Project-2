@@ -17,13 +17,15 @@ The game will utilise responsive design and will be playable in the browser in l
 
 ### User Stories
 
-1. As a first-time user, I need to understand what the website is for, in order to decide to play the game.
+1. As a user, I want to play the Pokemon match up game
 
-2. As a player, I need to understand the various options of the user interface, in order to effectively navigate the website and choose what I am looking for.
+2. As a user, I need to understand the various options of the user interface, in order to effectively navigate the website and choose what I am looking for.
 
-3. As a user, I need to understand that the target audience for the game is primarily for fans of Pokemon, in order to recognise the characters used and enjoy the game to its full extent.
+3. As a user, I want to be able to select my difficulty level for the game.
 
-4. As a player, I need to understand the instructions for how to play the game, in order to easily play and enjoy it.
+4. As a user, I want to be able to pause or quit the game.
+
+5. As a user, I want to know my game progress and my rank after I have finished the game.
 
 ### UX Framework
 
