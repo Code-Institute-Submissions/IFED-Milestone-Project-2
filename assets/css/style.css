@@ -33,22 +33,42 @@ header {
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
-    
 }
 
+@media only screen and (min-width: 500px) {
+    .menu {
+        width: 50%;
+    }
+}
 /*-----Button styling*/
 
 ul {
     list-style-type: none;
-    margin: 0 auto;
     padding: 0;
     width: 50vw;
+    margin: 10px;
 }
 
 li {
     vertical-align: auto;
     text-align: center;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+button {
+    border-radius: 25px;
+    padding: 10px;
+    border: solid;
+    color: #0c84c9;
+}
+
+button:hover {
+    background-color: #0c84c9;
+    color: #fff;
 }
 
 /*-----Link styling*/

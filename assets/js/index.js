@@ -6,10 +6,10 @@ var modalBg =
 document.querySelector('.modal-bg');
 
 var closeBtn = 
-document.querySelector('close-btn')
+document.querySelector('.close-btn')
 
 modalBtn.onclick = function() {
-    modalBg.classList.add('bg-active')
+    modalBg.style.display = "block"
 }
 
 closeBtn.onclick = function() {
