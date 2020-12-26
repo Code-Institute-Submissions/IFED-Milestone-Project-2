@@ -29,6 +29,9 @@ header {
     padding: 1px;
     margin: 10px auto;
     border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 }
 
