@@ -1,18 +1,15 @@
 // Modal - select play button
-var modalBtn =
-document.getElementById("playBtn");
+var modal = document.querySelector(".modal");
+var playbutton = document.querySelector("playbutton");
 
-var modalBg = 
-document.querySelector('.modal-bg');
-
-var closeBtn = 
-document.querySelector('.close-btn')
-
-modalBtn.onclick = function() {
-    modalBg.style.display = "block"
+function toggleModal() {
+    modal.classList.toggle(".modal-active");
 }
 
-closeBtn.onclick = function() {
-    modalBg.style.display = "none"
+function windowOnClick() {
+    if (event.target === modal) {
+        toggleModal();
+    }
 }
 
+playbutton.addEventListener("click", toggleModal)
