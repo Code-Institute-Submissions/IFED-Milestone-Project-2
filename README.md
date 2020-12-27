@@ -93,15 +93,16 @@ Controls include visual symbols and icons alongside them which allow the user to
 
 ### Existing Features
 
-### Upcoming Features
-
 1. Landing page
 2. User interface
-3. Pop up windows - modals
-4. Main game
-5. Countdown timer
-6. Images
-7. Leaderboard
+
+### Upcoming Features
+
+- Pop up windows - modals
+- Main game
+- Countdown timer
+- Images
+- Leaderboard
 
 ## Technologies Used
 
