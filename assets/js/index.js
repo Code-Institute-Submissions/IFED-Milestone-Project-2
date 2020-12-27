@@ -1,15 +1,18 @@
 // Modal - select play button
 var modal = document.querySelector(".modal");
 var playbutton = document.querySelector("playbutton");
+var closebutton = document.querySelector(".close-button")
 
 function toggleModal() {
-    modal.classList.toggle(".modal-active");
+    modal.classList.toggle("modal-active");
 }
 
-function windowOnClick() {
+function windowOnClick(event) {
     if (event.target === modal) {
         toggleModal();
     }
 }
 
-playbutton.addEventListener("click", toggleModal)
+playbutton.addEventListener("click", toggleModal);
+closebutton.addEventListener("click", toggleModal);
+window.addEventListener("click", windowOnClick)
