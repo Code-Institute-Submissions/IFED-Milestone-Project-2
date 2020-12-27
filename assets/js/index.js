@@ -16,3 +16,19 @@ function windowOnClick(event) {
 playbutton.addEventListener("click", toggleModal);
 closebutton.addEventListener("click", toggleModal);
 window.addEventListener("click", windowOnClick)
+
+//Main game
+
+//Timer
+let stopWatch = document.getElementsByClassName("timer");
+
+function startTimer() {
+    
+}
+
+// Select cards
+const cards = document.querySelector(".deck")
+
+cards.addEventListener("click", function(event) {
+ -------------------------------------
+})

@@ -124,3 +124,22 @@ a:hover {
     transform: scale(1.0);
     transition: visibility 0s, linear 0s, opacity 0.25s 0s, transform 0.25s;
 }
+
+/*-----Timer styling*/
+
+.timer {
+    color: #fff;
+    font-weight: 500;
+    display: inline-block;
+    font-size: large;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+/*-----Game UI Buttons*/
+
+.controls button {
+    border-radius: 50%;
+    width: 50px;
+}

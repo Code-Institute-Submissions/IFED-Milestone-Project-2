@@ -109,6 +109,9 @@ Controls include visual symbols and icons alongside them which allow the user to
 - HTML5
 - CSS3
 - JavaScript
+- JQuery
+- Google Fonts
+- FontAwesome
 
 ## Testing
 
