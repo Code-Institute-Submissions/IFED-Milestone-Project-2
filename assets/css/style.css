@@ -9,6 +9,8 @@ body {
     height: 100vh;
 }
 
+
+
 /*-----Header styling*/
 
 header {
@@ -142,4 +144,47 @@ a:hover {
 .controls button {
     border-radius: 50%;
     width: 50px;
+    position: fixed;
+}
+
+/*-----Main game styling*/
+
+.memory-game {
+    height: 600px;
+    width: 600px;
+    border: 5px solid red;
+    background-color: orange;
+    border-radius: 5px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.memory-card {
+    margin: 3px;
+    height: calc(25% - 10px);
+    width: calc(20% - 10px);
+    position: relative;
+    transform: scale(1);
+}
+
+.memory-card:active {
+    transform: scale(.95);
+    transition: transform .2s;
+}
+
+.card-front, .card-back {
+    position: absolute;
+    border: 1px solid red;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+}
+
+.card-front {
+    background-color: yellow;
+}
+
+.card-front {
+    background-color: white;
 }
