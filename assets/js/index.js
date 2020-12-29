@@ -27,8 +27,11 @@ function startTimer() {
 }
 
 // Select cards
-const cards = document.querySelector(".deck")
+const cards = document.querySelector(".memory-card");
 
-cards.addEventListener("click", function(event) {
- 
-})
+function cardTurn() {
+    console.log('Yay!')
+    console.log(this)
+}
+
+cards.forEach(card => card.addEventListener('click', cardTurn));
