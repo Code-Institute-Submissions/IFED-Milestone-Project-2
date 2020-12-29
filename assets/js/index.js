@@ -30,5 +30,5 @@ function startTimer() {
 const cards = document.querySelector(".deck")
 
 cards.addEventListener("click", function(event) {
- -------------------------------------
+ 
 })
