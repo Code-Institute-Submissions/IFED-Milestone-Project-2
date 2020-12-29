@@ -123,7 +123,8 @@ Controls include visual symbols and icons alongside them which allow the user to
 
 ### Media
 
-[Pokeball Image](https://www.pngkit.com/view/u2w7o0r5r5t4e6w7_pokeball-master-ball-sprite-png/)
+[pokeball.png](https://www.pngkit.com/view/u2w7o0r5r5t4e6w7_pokeball-master-ball-sprite-png/)
 [great-ball.png](http://pixelartmaker.com/art/cfc1de4ce952314)
+[ultra-ball.png](https://toppng.com/ultra-ball-pokeball-pixel-PNG-free-PNG-Images_188906)
 
 ### Acknowledgements

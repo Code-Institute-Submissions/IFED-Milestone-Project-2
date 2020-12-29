@@ -184,3 +184,8 @@ a:hover {
 .card-back {
     background-color: white;
 }
+
+.easy-game .memory-card {
+    width: calc(25% - 6px);
+    height: calc(33.33% - 10px);
+}

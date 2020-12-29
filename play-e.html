@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Bootstrap CSS CDN-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        type="text/css" />
+
+    <!--FontAwesome CDN-->
+    <script src="https://kit.fontawesome.com/34141e8fef.js" crossorigin="anonymous"></script>
+
+    <!--CSS Stylesheet-->
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+
+    <title>Pokemon Match Up</title>
+
+    <!--JQuery Script-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+
+    <!--Bootstrap JS CDN-->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <!-- Page header and logo-->
+    <header class="container">
+        <div class="row no-gutters">
+            <div class="col-md-12">
+                <h1 class="col heading">
+                    <a href="index.html">Pokemon Match Up</a>
+                </h1>
+            </div>
+        </div>
+    </header>
+
+    <!-----Timer-->
+
+    <div class="timer">
+        <i class="far fa-clock"></i> <span id="minutes">0</span>:<span id="seconds">00</span>
+    </div>
+
+    <!-----Main game grid (Easy Difficulty - 4 x 3 grid - 12 cards - 6 pairs of Pokemon-->
+    <div class="easy-game">
+        <div class="memory-game">
+            <div class="memory-card">
+                <img class="card-front" src="sprites/sprites/pokemon/model/1.png" alt="Bulbasaur">
+                <img class="card-back" src="assets/images/pokeball.png" alt="pokéball">
+            </div>
+            <div class="memory-card">
+                <img class="card-front" src="sprites/sprites/pokemon/model/1.png" alt="Bulbasaur">
+                <img class="card-back" src="assets/images/pokeball.png" alt="pokéball">
+            </div>
+            <div class="memory-card">
+                <img class="card-front" src="sprites/sprites/pokemon/model/4.png" alt="Charmander">
+                <img class="card-back" src="assets/images/pokeball.png" alt="pokéball">
+            </div>
+            <div class="memory-card">
+                <img class="card-front" src="sprites/sprites/pokemon/model/4.png" alt="Charmander">
+                <img class="card-back" src="assets/images/pokeball.png" alt="pokéball">
+            </div>
+            <div class="memory-card">
+                <img class="card-front" src="sprites/sprites/pokemon/model/7.png" alt="Squirtle">
+                <img class="card-back" src="assets/images/pokeball.png" alt="pokéball">
+            </div>
+            <div class="memory-card">
+                <img class="card-front" src="sprites/sprites/pokemon/model/7.png" alt="Squirtle">
+                <img class="card-back" src="assets/images/pokeball.png" alt="pokéball">
+            </div>
+            <div class="memory-card">
+                <img class="card-front" src="sprites/sprites/pokemon/model/152.png" alt="Chikorita">
+                <img class="card-back" src="assets/images/pokeball.png" alt="pokéball">
+            </div>
+            <div class="memory-card">
+                <img class="card-front" src="sprites/sprites/pokemon/model/152.png" alt="Chikorita">
+                <img class="card-back" src="assets/images/pokeball.png" alt="pokéball">
+            </div>
+            <div class="memory-card">
+                <img class="card-front" src="sprites/sprites/pokemon/model/155.png" alt="Cyndaquil">
+                <img class="card-back" src="assets/images/pokeball.png" alt="pokéball">
+            </div>
+            <div class="memory-card">
+                <img class="card-front" src="sprites/sprites/pokemon/model/155.png" alt="Cyndaquil">
+                <img class="card-back" src="assets/images/pokeball.png" alt="pokéball">
+            </div>
+            <div class="memory-card">
+                <img class="card-front" src="sprites/sprites/pokemon/model/158.png" alt="Totodile">
+                <img class="card-back" src="assets/images/pokeball.png" alt="pokéball">
+            </div>
+            <div class="memory-card">
+                <img class="card-front" src="sprites/sprites/pokemon/model/158.png" alt="Totodile">
+                <img class="card-back" src="assets/images/pokeball.png" alt="pokéball">
+            </div>
+        </div>
+    </div>
+
+    <!-----UI Buttons-->
+
+    <div class="controls">
+        <div>
+            <button type="button"><i class="fas fa-pause"></i></button>
+            <button type="button"><i class="fas fa-info"></i></button>
+            <button type="button"><i class="fas fa-undo-alt"></i></button>
+        </div>
+    </div>
+</body>
+
+<!--JS Script-->
+<script src="assets/js/index.js"></script>
+
+</html>
