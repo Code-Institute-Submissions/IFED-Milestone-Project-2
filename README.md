@@ -95,13 +95,13 @@ Controls include visual symbols and icons alongside them which allow the user to
 
 1. Landing page
 2. User interface
+3. Images
 
 ### Upcoming Features
 
 - Pop up windows - modals
 - Main game
 - Countdown timer
-- Images
 - Leaderboard
 
 ## Technologies Used
@@ -114,6 +114,7 @@ Controls include visual symbols and icons alongside them which allow the user to
 - FontAwesome
 
 ## Testing
+
 
 ## Deployment
 

@@ -101,10 +101,9 @@ a:hover {
     width: 100%;
     height: 100%;
     background-color: rgba(0,0,0,0.5);
-    opacity: 0;
-    visibility: hidden;
-    transform: scale(1.1);
+    z-index: 1;
     transition: visibility 0s, linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+    visibility: hidden;
 }
 
 .modal-content {
@@ -113,11 +112,13 @@ a:hover {
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: 'Press Start 2P', 'sans-serif';
-    color: #fff;
-    background-color: #64a9d1;
-    width: 24rem;
-    padding: 1 rem;
+    color: #e4000f;
+    background-color: #fff;
+    width: 26rem;
+    padding: 5px;
+    border: solid 5px #e4000f;
     border-radius: 25px;
+    text-align: center;
 }
 
 .modal-active {
@@ -125,6 +126,73 @@ a:hover {
     visibility: visible;
     transform: scale(1.0);
     transition: visibility 0s, linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.modal-info {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    transform: scale(1.1);
+    transition: visibility 0s, linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+    z-index: 1;
+    visibility: hidden;
+}
+
+.modal-info-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Press Start 2P', 'sans-serif';
+    color: #e4000f;
+    background-color: #fff;
+    width: 26rem;
+    padding: 5px;
+    border: solid 5px #e4000f;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.modal-end {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    transform: scale(1.1);
+    transition: visibility 0s, linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+    z-index: 1;
+    visibility: hidden;
+}
+
+.modal-end-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Press Start 2P', 'sans-serif';
+    color: #e4000f;
+    background-color: #fff;
+    width: 26rem;
+    padding: 5px;
+    border: solid 5px #e4000f;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.close-button {
+    color: #e4000f;
+    border: solid 5px #e4000f;
+}
+
+.close-button:hover{
+    border-color: white;
+    color: white;
+    background-color: #e4000f;
 }
 
 /*-----Timer styling*/
