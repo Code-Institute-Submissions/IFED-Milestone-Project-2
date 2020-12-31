@@ -5,6 +5,10 @@ The goal of the game is to match pairs of identical images of Pokemon characters
 The player's skill and memory is tested and the fastest times are added to the leaderboard.
 The theme of the game is centered around designs and characters from the Pokemon series of video games.
 
+There are three difficulty levels for the player to choose from, offering a level of flexibility depending on the player's choice.
+As difficulty increases, more pairs must be matched.
+The game ends when the grid is empty and all matching Pokemon have been found.
+
 ## User Experience (UX)
 
 The goal this website aims to achieve is to provide an interactive and fun game for the purpose of entertainment.
@@ -50,7 +54,9 @@ The menus should allow the user to return to the previous screen or close the di
 A functioning leaderboard should alow the user to input their name alongside their time, which will be cached using the browser.
 To mitigate blank screens between content loading, a loading screen will also be displayed.
 A timer will be used and must accurately be able to start and stop when needed.
-The final time should be displayed on the leaderboard if submitted
+The timer must activate once the user starts playing the game, on their first click.
+The final time must display in the modal once the final pair is matched.
+The final time should be displayed on the leaderboard if submitted.
 
 *** Content Requirements ***
 
@@ -85,6 +91,15 @@ Colours will be thematically appropriate and not distract from the game, as well
 The fonts used are easy to read, and appropriate for the style of the game.
 Controls include visual symbols and icons alongside them which allow the user to clearly understand the function of each control.
 
+The font chosen for the website text is 'Press Start 2P' sourced from Google Fonts. This font was chosen as it fits the retro game design which is suitable for the Pokemon theme of the content, as well as being easily legible.
+Contrasting colours are used for the text against the backgrounds.
+The landing page uses a blue vertical gradient as the background, to be attractive as well as to convey a fun and calm impression of the ga,e.
+White text is used to stand out against this.
+The content box and menu buttons are rounded as a stylistic choice and make the design look simple and attractive.
+Modals are used as a design choice to avoid distracting the user with additional loading screens and complicated layouts.
+
+The main game screen displays the central grid for the game, and the timer, as well as UI buttons for functionality.
+
 ### Wireframe
 
 [Wireframe PDF made in Balsamiq](./wireframe/MS2-wireframe.pdf)
@@ -94,8 +109,22 @@ Controls include visual symbols and icons alongside them which allow the user to
 ### Existing Features
 
 1. Landing page
+
+The landing page aims to be simple and easy to navigate, with the main menu in the center of the page with clearly displayed options.
+Icons and visual cues provide a first time user with the impression of a retro-inspired game theme.
+
 2. User interface
+
+The user interface uses modals and clear simple buttons that are responsive and allow the user to navigate to the option of their choice.
+A close button is integrated into each modal to allow the user to exit if they have clicked the wrong option.
+The modal displayed upon completion of the game allows the user to submit their nickname and time to be displayed in the leaderboard, using a text input form.
+
 3. Images
+
+The images used are sourced from PokeAPI. 
+Pokemon models from video games are compiled in the API, which I have integrated into the game grid.
+Each difficulty has different Pokemon to match.
+The card back has a different image for each difficulty level, respectiely, 
 
 ### Upcoming Features
 
@@ -115,17 +144,38 @@ Controls include visual symbols and icons alongside them which allow the user to
 
 ## Testing
 
+HTML code was validated and edited by using the W3C online code vaidator, which allowed fixes to be made with respect to open tags and incorrect syntax.
+CSS code was validated using the Jigsaw W3 online validation service. This allowed incorrect syntax to be fixed
+Google Chrome in-browser developer tools have been used throughout the project to test responsiveness on different device sizes
+
 
 ## Deployment
 
-## Acknowledgements
+The project is deployed using Github Pages.
+The IDE used for this project is Gitpod.
+
+## Credits
 
 ### Content
 
+
+
 ### Media
+
+FontAwesome was used to provide the vector graphic button icons for the UI.
+[FontAwesome](https://fontawesome.com/)
+
+Google Fonts was used to obtain the free font 'Press Start 2P'
+[Google-Fonts](https://fonts.google.com/specimen/Press+Start+2P?query=press)
+
+PokeAPI was the primary source used for locating and integrating Pokemon character sprites into the project.
+[PokeAPI](https://github.com/PokeAPI)
 
 [pokeball.png](https://www.pngkit.com/view/u2w7o0r5r5t4e6w7_pokeball-master-ball-sprite-png/)
 [great-ball.png](http://pixelartmaker.com/art/cfc1de4ce952314)
 [ultra-ball.png](https://toppng.com/ultra-ball-pokeball-pixel-PNG-free-PNG-Images_188906)
 
 ### Acknowledgements
+
+-- Code Institute group on slack
+-- My mentor, Adegbenga Adeye
