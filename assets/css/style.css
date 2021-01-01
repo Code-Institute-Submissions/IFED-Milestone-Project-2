@@ -58,6 +58,7 @@ li {
     justify-content: center;
     align-items: center;
     padding: 15px;
+    flex-direction: column;
 }
 
 button {
@@ -114,6 +115,22 @@ a:hover {
     border: solid 5px #e4000f;
     border-radius: 25px;
     text-align: center;
+}
+
+.difficulties {
+    color: #e4000f;
+    border: solid 5px #e4000f;
+    padding: 5px;
+}
+
+.difficulties:hover {
+    border-color: white;
+    color: white;
+    background-color: #e4000f;
+}
+
+.modal-content a {
+    padding: 5px;
 }
 
 .modal-info-content {
@@ -197,6 +214,10 @@ a:hover {
 .memory-card:active {
     transform: scale(.95);
     transition: transform .2s;
+}
+
+.memory-card.flip {
+    transform: rotateY(180deg);
 }
 
 .card-front, .card-back {

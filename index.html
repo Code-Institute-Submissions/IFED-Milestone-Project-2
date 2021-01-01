@@ -54,12 +54,10 @@
     <div id="playModal" class="modal fade" tabindex="-1" role="dialog">
         <div class="modal-content" role="document">
             <h2>Choose Difficulty:</h2>
-            <ul>
-                <li><a href="play-e.html">Easy</a></li>
-                <li><a href="play-m.html">Medium</a></li>
-                <li><a href="play-h.html">Hard</a></li>
-            </ul>
-            <button type="button" class="close-button" data-dismiss="modal"><i class="fas fa-times"></i> Close</button>
+                <a href="play-e.html"><button type="button" class="difficulties">Easy</button></a>
+                <a href="play-m.html"><button type="button" class="difficulties">Medium</button></a>
+                <a href="play-h.html"><button type="button" class="difficulties">Hard</button></a>
+            <button type="button" id="playClose" class="close-button" data-dismiss="modal"><i class="fas fa-times"></i> Close</button>
         </div>
     </div>
 
@@ -74,11 +72,9 @@
                 Aim to be the fastest on the leaderboard!
                 To reset the game, press the 'Reset' button.
             </p>
-            <button type="button" class="close-button"><i class="fas fa-times"></i> Close</button>
+            <button type="button" class="close-button" data-dismiss="modal"><i class="fas fa-times"></i> Close</button>
         </div>
     </div>
-
-    <a href="https://8000-ff167852-2f28-4cb3-8939-c69b99638810.ws-eu03.gitpod.io/play-m.html">GAME HERE</a>
 </body>
 
 <!--JS Script-->
