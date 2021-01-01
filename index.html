@@ -44,14 +44,14 @@
     <!--Landing Page UI-->
     <div class="menu container">
         <ul>
-            <li><button type="button" id="playbutton" data-toggle="modal" data-target="playmodal"> <i class="far fa-play-circle"></i> Play</button></li>
-            <li><button type="button" id="helpbutton"> <i class="fas fa-info"></i> Instructions</button></li>
+            <li><button type="button" id="playbutton" data-toggle="modal" data-target="#playModal"> <i class="far fa-play-circle"></i> Play</button></li>
+            <li><button type="button" id="helpbutton" data-toggle="modal" data-target="#infoModal"> <i class="fas fa-info"></i> Instructions</button></li>
             <li><button type="button" id="rankbutton"> <i class="fas fa-medal"></i> Leaderboard</button></li>
         </ul>
     </div>
 
     <!--Modals-->
-    <div id="playModal" class="modal" tabindex="-1" role="dialog">
+    <div id="playModal" class="modal fade" tabindex="-1" role="dialog">
         <div class="modal-content" role="document">
             <h2>Choose Difficulty:</h2>
             <ul>
@@ -63,8 +63,8 @@
         </div>
     </div>
 
-    <div class="modal-info">
-        <div class="modal-info-content">
+    <div id="infoModal" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-info-content" role="document">
             <h2>Instructions</h2>
             <p>Pokemon Match Up is a matching pairs memory game.
                 Choose your difficulty to start a game.

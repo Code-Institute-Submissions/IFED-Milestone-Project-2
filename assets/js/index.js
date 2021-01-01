@@ -5,3 +5,7 @@ $('#playbutton').click(function() {
 $('.close-button').click(function () {
     $('#playModal').modal('hide')
 })
+
+$('helpbutton').click(function() {
+    $('infoModal').modal('show')
+})
