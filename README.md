@@ -21,15 +21,17 @@ The game will utilise responsive design and will be playable in the browser in l
 
 ### User Stories
 
-1. As a user, I want to play the Pokemon match up game
+1. As a user, I want a game that is fun to play.
 
 2. As a user, I need to understand the various options of the user interface, in order to effectively navigate the website and choose what I am looking for.
 
 3. As a user, I want to be able to select my difficulty level for the game.
 
-4. As a user, I want to be able to pause or quit the game.
+4. As a user, I want to be able to understand how to play the game.
 
-5. As a user, I want to know my game progress and my rank after I have finished the game.
+5. As a user, I want to be able to pause or quit the game.
+
+6. As a user, I want to know my game progress and my rank after I have finished the game.
 
 ### UX Framework
 
@@ -135,12 +137,21 @@ The card back has a different image for each difficulty level, respectiely,
 
 ## Technologies Used
 
-- HTML5
-- CSS3
-- JavaScript
-- JQuery
-- Google Fonts
-- FontAwesome
+- HTML5 - This was used to create the base code and structure for the landing page as well as the main game pages.
+
+- CSS3 - This was used to style the elements and position the content of the page, and to make it responsive.
+
+- JavaScript - This was used to create the logic of the game, as well as for the functionality of the modals.
+
+- Bootstrap - Bootstrap was used to format the layout of some of the content elements.
+
+- JQuery - Used to toggle modals.
+
+- Google Fonts - Google Fonts was used to provide open source fonts to style the text of the website.
+
+- FontAwesome - Icons from FontAwesome were used to provide a visual cue for the user interface buttons for navigation.
+
+- Balsamiq - Used to create the wireframe for the initial design of the project.
 
 ## Testing
 
@@ -171,8 +182,13 @@ Google Fonts was used to obtain the free font 'Press Start 2P'
 PokeAPI was the primary source used for locating and integrating Pokemon character sprites into the project.
 [PokeAPI](https://github.com/PokeAPI)
 
+Pokeball image used for easy difficulty
 [pokeball.png](https://www.pngkit.com/view/u2w7o0r5r5t4e6w7_pokeball-master-ball-sprite-png/)
+
+Great Ball image used for medium difficulty
 [great-ball.png](http://pixelartmaker.com/art/cfc1de4ce952314)
+
+Ultra Ball image used for hard difficulty
 [ultra-ball.png](https://toppng.com/ultra-ball-pokeball-pixel-PNG-free-PNG-Images_188906)
 
 ### Acknowledgements
