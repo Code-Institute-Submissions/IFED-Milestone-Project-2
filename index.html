@@ -44,22 +44,22 @@
     <!--Landing Page UI-->
     <div class="menu container">
         <ul>
-            <li><button type="button" id="playbutton"> <i class="far fa-play-circle"></i> Play</button></li>
+            <li><button type="button" id="playbutton" data-toggle="modal" data-target="playmodal"> <i class="far fa-play-circle"></i> Play</button></li>
             <li><button type="button" id="helpbutton"> <i class="fas fa-info"></i> Instructions</button></li>
             <li><button type="button" id="rankbutton"> <i class="fas fa-medal"></i> Leaderboard</button></li>
         </ul>
     </div>
 
     <!--Modals-->
-    <div class="modal">
-        <div class="modal-content">
+    <div id="playModal" class="modal" tabindex="-1" role="dialog">
+        <div class="modal-content" role="document">
             <h2>Choose Difficulty:</h2>
             <ul>
                 <li><a href="play-e.html">Easy</a></li>
                 <li><a href="play-m.html">Medium</a></li>
                 <li><a href="play-h.html">Hard</a></li>
             </ul>
-            <button type="button" class="close-button"><i class="fas fa-times"></i> Close</button>
+            <button type="button" class="close-button" data-dismiss="modal"><i class="fas fa-times"></i> Close</button>
         </div>
     </div>
 
