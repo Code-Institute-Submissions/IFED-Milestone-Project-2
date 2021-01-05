@@ -209,6 +209,8 @@ a:hover {
     width: calc(20% - 6px);
     position: relative;
     transform: scale(1);
+    transform-style: preserve-3d;
+    transition: 0.3s;
 }
 
 .memory-card:active {
@@ -226,10 +228,12 @@ a:hover {
     border-radius: 5px;
     width: 100%;
     height: 100%;
+    backface-visibility: hidden;
 }
 
 .card-front {
     background-color: yellow;
+    transform: rotateY(180deg);
 }
 
 .card-back {
