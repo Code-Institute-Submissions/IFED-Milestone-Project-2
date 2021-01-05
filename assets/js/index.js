@@ -2,22 +2,22 @@
 
 // Open Play modal
 $('#playbutton').click(function () {
-    $('#playModal').modal('toggle')
+    $('#playModal').modal('toggle');
 })
 
 // Open Instructions modal
 $('#helpbutton').click(function () {
-    $('#infoModal').modal('show')
+    $('#infoModal').modal('toggle');
 })
 
 //Close Play menu
 $('#playClose').click(function () {
-    $('#playModal').modal('hide')
+    $('#playModal').modal('hide');
 })
 
 //Close Instructions
 $('#helpClose').click(function () {
-    $('#infoModal').modal('hide')
+    $('#infoModal').modal('hide');
 })
 
 //Timer//
@@ -29,6 +29,15 @@ const cards = document.querySelectorAll('.memory-card');
 let cardFlipped = false; // Property if card has been flipped
 let lockBoard = false; // Stops more clicks during card flips
 let firstCard, secondCard; // Declare first and second card variables
+let totalMatch = 0; //total number of matches
+
+//Shuffle Cards//
+(function shuffle() {
+    cards.forEach(card => {
+        let randomPos = Math.floor(Math.random() * 36);
+        card.style.order = randomPos;
+    });
+})();
 
 function cardTurn() {
     if (lockBoard) {
@@ -58,6 +67,7 @@ function checkForMatch() {
     if (firstCard.dataset.image ===
         secondCard.dataset.image) {
         disableCards(); // If cards match disable them
+        totalMatch += 1;
     }
 
     else {
@@ -69,7 +79,6 @@ function disableCards() {
     //If both cards match, keep them visible
     firstCard.removeEventListener('click', cardTurn);
     secondCard.removeEventListener('click', cardTurn);
-
     resetBoard();
 }
 
@@ -80,7 +89,7 @@ function unflipCards() {
     setTimeout(() => {
         firstCard.classList.remove('flip');
         secondCard.classList.remove('flip');
-
+        
         resetBoard();
     }, 1000); //Display mismatched cards for 1000ms
 }
@@ -92,16 +101,10 @@ function resetBoard() {
     secondCard = null;
 }
 
-//Shuffle Cards//
-(function shuffle() {
-    cards.forEach(card => {
-        let randomPos = Math.floor(Math. random() * 12);
-        card.style.order = randomPos;
-    });
-});
+//End game modal
+if (totalMatch === (cards.length)/2) {  
+    $('#endModal').modal('show');
+}
 
 cards.forEach(card => card.addEventListener('click', cardTurn)); //Executes cardTurn function
-
-
-
 
