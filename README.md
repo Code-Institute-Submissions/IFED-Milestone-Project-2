@@ -72,7 +72,7 @@ The game page will utilise a timer which should be displayed with the game, in f
 The structure of the website is designed to be responsive and interactive, with clear placement of interface buttons and options.
 The aim is to have two main pages; the landing page, and the game page.
 All other content will be integrated using additional pop-up windows as they are optional and should not require the user to navigate to a different page.
-
+The timer will be visible on the game page to allow the user to keep track of their progress. This will be displayed in different positions in accordance with responsive design techniques.
 
 **4. Skeleton**
 
@@ -101,6 +101,8 @@ The content box and menu buttons are rounded as a stylistic choice and make the 
 Modals are used as a design choice to avoid distracting the user with additional loading screens and complicated layouts.
 
 The main game screen displays the central grid for the game, and the timer, as well as UI buttons for functionality.
+The game displays different Pokemon sprites dependingon the selected difficulty of the game.
+Once a tile is clicked, a yellow background is displayed which is thematically appropriate and takes cues from the Pokemon logo, as well as providing good contrast to allow the player to easily see the selected Pokemon.
 
 ### Wireframe
 
@@ -126,12 +128,22 @@ The modal displayed upon completion of the game allows the user to submit their 
 The images used are sourced from PokeAPI. 
 Pokemon models from video games are compiled in the API, which I have integrated into the game grid.
 Each difficulty has different Pokemon to match.
-The card back has a different image for each difficulty level, respectiely, 
+The card back has a different image for each difficulty level, respectively.
+
+4. Pop up windows - modals
+
+The website uses modals as a tool for navigation and to display options to the user. 
+Currently the modals all work as expected except for the close buttons.
+
+5. Main game
+
+The main game was created using a video tutorial and the code was modified to suit design needs as well as certain functions.
+The game currently allows cards to be flipped, with non-matching cards being hidden again, and matching cards being displayed permanently.
+Several corner cases have been identified, such as rapid succesive clicks causing matching errors and the cards remaining flipped over despite not being matched.
+In addition, double clicking the same card causes the game logic to identify this as a match incorrectly.
 
 ### Upcoming Features
 
-- Pop up windows - modals
-- Main game
 - Countdown timer
 - Leaderboard
 
@@ -156,9 +168,9 @@ The card back has a different image for each difficulty level, respectiely,
 ## Testing
 
 HTML code was validated and edited by using the W3C online code vaidator, which allowed fixes to be made with respect to open tags and incorrect syntax.
-CSS code was validated using the Jigsaw W3 online validation service. This allowed incorrect syntax to be fixed
-Google Chrome in-browser developer tools have been used throughout the project to test responsiveness on different device sizes
-
+CSS code was validated using the Jigsaw W3 online validation service. This allowed incorrect syntax to be fixed.
+Google Chrome in-browser developer tools have been used throughout the project to test responsiveness on different device sizes.
+JavaScript code was validated using the esprima.org JS syntax validator which confirmed no errors.
 
 ## Deployment
 
@@ -169,7 +181,11 @@ The IDE used for this project is Gitpod.
 
 ### Content
 
+The JavaScript code for the game logic was created by following a video tutorial, and edited according to my own project.
+The source of the video tutorial from FreeCodeCamp can be found here (https://www.youtube.com/watch?v=ZniVgo8U7ek)
 
+The creation of the Bootstrap modals applied code originally created on the Bootstrap official website, which was adapted for my project.
+The source for the modal code can be found here: (https://getbootstrap.com/docs/4.0/components/modal/)
 
 ### Media
 

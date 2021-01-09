@@ -163,6 +163,21 @@ a:hover {
     text-align: center;
 }
 
+.modal-rank-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Press Start 2P', 'sans-serif';
+    color: #e4000f;
+    background-color: #fff;
+    width: 26rem;
+    padding: 5px;
+    border: solid 5px #e4000f;
+    border-radius: 25px;
+    text-align: center;
+}
+
 .close-button {
     color: #e4000f;
     border: solid 5px #e4000f;

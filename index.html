@@ -46,7 +46,7 @@
         <ul>
             <li><button type="button" id="playbutton" data-toggle="modal" data-target="#playModal"> <i class="far fa-play-circle"></i> Play</button></li>
             <li><button type="button" id="helpbutton" data-toggle="modal" data-target="#infoModal"> <i class="fas fa-info"></i> Instructions</button></li>
-            <li><button type="button" id="rankbutton"> <i class="fas fa-medal"></i> Leaderboard</button></li>
+            <li><button type="button" id="rankbutton" data-toggle="modal" data-target="#rankModal"> <i class="fas fa-medal"></i> Leaderboard</button></li>
         </ul>
     </div>
 
@@ -75,6 +75,15 @@
             <button type="button" id="helpClose" class="close-button" data-dismiss="modal" aria-label="Close"><i class="fas fa-times"></i> Close</button>
         </div>
     </div>
+
+    <div id="rankModal" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-rank-content" role="document">
+            <h2>Leaderboard</h2>
+            <p>PLACEHOLDER TEXT</p>
+            <button type="button" id="rankClose" class="close-button" data-dismiss="modal" aria-label="Close"><i class="fas fa-times"></i> Close</button>
+        </div>
+    </div>
+
 </body>
 
 <!--JS Script-->
