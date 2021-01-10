@@ -37,15 +37,6 @@ header {
     flex-direction: column;
 }
 
-@media only screen and (min-width: 500px) {
-    .menu {
-        width: 50%;
-    }
-
-    .modal-content {
-        width: 40%;
-    }
-}
 /*-----Button styling*/
 
 ul {
@@ -114,11 +105,15 @@ a:hover {
     font-family: 'Press Start 2P', 'sans-serif';
     color: #e4000f;
     background-color: #fff;
-    width: 26rem;
+    max-width: 425px;
     padding: 5px;
     border: solid 5px #e4000f;
     border-radius: 25px;
     text-align: center;
+}
+
+.modal-content h2 {
+    font-size: 24px;
 }
 
 .difficulties {
@@ -145,7 +140,7 @@ a:hover {
     font-family: 'Press Start 2P', 'sans-serif';
     color: #e4000f;
     background-color: #fff;
-    width: 26rem;
+    max-width: 100%;
     padding: 5px;
     border: solid 5px #e4000f;
     border-radius: 25px;
@@ -160,7 +155,7 @@ a:hover {
     font-family: 'Press Start 2P', 'sans-serif';
     color: #e4000f;
     background-color: #fff;
-    width: 26rem;
+    max-width: 425px;
     padding: 5px;
     border: solid 5px #e4000f;
     border-radius: 25px;
@@ -175,7 +170,7 @@ a:hover {
     font-family: 'Press Start 2P', 'sans-serif';
     color: #e4000f;
     background-color: #fff;
-    width: 26rem;
+    max-width: 425px;;
     padding: 5px;
     border: solid 5px #e4000f;
     border-radius: 25px;
@@ -217,8 +212,8 @@ a:hover {
 /*-----Main game styling*/
 
 .memory-game {
-    height: 60vh;
-    width: 100%;
+    height: 50vh;
+    max-width: 425px;
     border: 5px solid red;
     background-color: #fff;
     border-radius: 10px;
