@@ -6,9 +6,9 @@ body {
     background-image: linear-gradient(180deg, #0c84c9, #64a9d1);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: 100%;
+    width: 100%;
 }
-
 
 
 /*-----Header styling*/
@@ -40,6 +40,10 @@ header {
 @media only screen and (min-width: 500px) {
     .menu {
         width: 50%;
+    }
+
+    .modal-content {
+        width: 40%;
     }
 }
 /*-----Button styling*/
@@ -203,6 +207,11 @@ a:hover {
 .controls button {
     border-radius: 50%;
     width: 50px;
+}
+
+.controls {
+    display: inline-flex;
+    vertical-align: bottom;
 }
 
 /*-----Main game styling*/

@@ -32,6 +32,45 @@ $('#rankClose').click(function () {
 
 //Timer//
 
+var seconds = 00;
+var miliseconds = 00;
+
+var changeSeconds = document.getElementById('seconds');
+var changeMiliseconds = document.getElementById('miliseconds');
+
+//Start timer on first card turn
+
+firstCard.onClick = function() {
+    (startTimer, 10);
+}
+
+//Timer interval
+
+function startTimer () {
+    miliseconds++;
+
+    if (miliseconds < 9){
+        changeMiliseconds.innerHTML = "0" + miliseconds;
+    }
+
+    if (miliseconds > 9){
+        changeMiliseconds.innerHTML = miliseconds;
+    }
+
+    if (miliseconds > 99){
+        seconds++;
+        changeSeconds.innerHTML = "0" + seconds;
+        miliseconds = 0;
+        changeMiliseconds = "0" + 0;
+    }
+
+    if (seconds > 9){
+        changeSeconds.innerHTML = seconds;
+    }
+}
+
+//End timer
+
 //Main Game//
 
 const cards = document.querySelectorAll('.memory-card');
