@@ -22,12 +22,12 @@ $('#playClose').click(function () {
 
 //Close Instructions
 $('#helpClose').click(function () {
-    $('#infoModal').modal('hide');
+    $('#infoModal').modal('toggle');
 })
 
 //Close Leaderboard
 $('#rankClose').click(function () {
-    $('#rankModal').modal('hide');
+    $('#rankModal').modal('toggle');
 })
 
 

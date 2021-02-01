@@ -3,7 +3,7 @@
 /*-----Colors and formatting*/
 
 body {
-    background-image: linear-gradient(180deg, #0c84c9, #64a9d1);
+    background-image: linear-gradient(180deg, #0c84c9, #d0e7f5);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -119,7 +119,9 @@ a:hover {
 .difficulties {
     color: #e4000f;
     border: solid 5px #e4000f;
-    padding: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 5px;
 }
 
 .difficulties:hover {
@@ -186,6 +188,10 @@ a:hover {
     border-color: white;
     color: white;
     background-color: #e4000f;
+}
+
+.close{
+    padding: 0 !important;
 }
 
 /*-----Timer styling*/
