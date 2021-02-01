@@ -44,23 +44,12 @@
         </ul>
     </div>
     ​
-    <!--Your Modals HTML Code    -->
-    <!-- <div id="playModal" class="modal fade" tabindex="-1" role="dialog">
-        <div class="modal-content" role="document">
-            <h2>Choose Difficulty:</h2>
-            <a href="play-e.html"><button type="button" class="difficulties">Easy</button></a>
-            <a href="play-m.html"><button type="button" class="difficulties">Medium</button></a>
-            <a href="play-h.html"><button type="button" class="difficulties">Hard</button></a>
-            <button type="button" id="playClose" class="close-button" data-dismiss="modal" aria-label="Close"><i class="fas fa-times"></i> Close</button>
-        </div>
-    </div> -->
-    ​
-    <!-- Needed Modal html code -->
+    <!-- Modal html code -->
     <div class="modal fade" id="playModal" tabindex="-1" aria-labelledby="playModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h2 class="modal-title" id="playModalLabel">Choose Difficulty:</h2>
+                    <h3 class="modal-title" id="playModalLabel">Choose Difficulty:</h3>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -78,11 +67,11 @@
         </div>
     </div>
     ​
-    <div id="infoModal" class="modal fade" tabindex="-1" aria-labelledby="helpModalLabel" role="dialog">
+    <div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="helpModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-info-content" role="document">
+            <div class="modal-content">
                 <div class="modal-header">
-                    <h2 class="modal-title" id="helpModalLabel">Instructions:</h2>
+                    <h3 class="modal-title" id="helpModalLabel">Instructions:</h3>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -105,6 +94,29 @@
         </div>
     </div>
     ​
+    <div class="modal fade" id="rankModal" tabindex="-1" aria-labelledby="rankModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="rankModalLabel">&nbsp; Leaderboard</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        PLACEHOLDER TEXT
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" id="rankClose" class="close-button" data-dismiss="modal" aria-label="Close"><i
+                            class="fas fa-times"></i> Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--
     <div id="rankModal" class="modal fade" tabindex="-1" aria-labelledby="rankModalLabel" role="dialog">
         <div class="modal-dialog modal-dialog-centered">
 
@@ -120,7 +132,7 @@
                         class="fas fa-times"></i> Close</button>
             </div>
         </div>
-    </div>
+    </div> -->
     ​
 </body>
 ​

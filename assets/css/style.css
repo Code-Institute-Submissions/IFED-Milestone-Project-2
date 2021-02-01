@@ -112,10 +112,6 @@ a:hover {
     text-align: center;
 }
 
-.modal-content h2 {
-    font-size: 24px;
-}
-
 .difficulties {
     color: #e4000f;
     border: solid 5px #e4000f;
@@ -179,9 +175,15 @@ a:hover {
     text-align: center;
 }
 
+.modal-footer{
+    display: flex;
+    justify-content: center;
+}
+
 .close-button {
     color: #e4000f;
     border: solid 5px #e4000f;
+    align-items: center;
 }
 
 .close-button:hover{
