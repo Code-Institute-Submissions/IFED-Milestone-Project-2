@@ -30,8 +30,6 @@ $('#rankClose').click(function () {
     $('#rankModal').modal('toggle');
 })
 
-
-
 //Main Game//
 
 const cards = document.querySelectorAll('.memory-card');
@@ -116,5 +114,11 @@ if (totalMatch === (cards.length)/2) {
     $('#endModal').modal('show');
 }
 
+
+
 cards.forEach(card => card.addEventListener('click', cardTurn)); //Executes cardTurn function
 
+//Reset Button
+$('#resetBtn').click(function () {
+    window.location.reload();
+})

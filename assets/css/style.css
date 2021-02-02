@@ -10,7 +10,6 @@ body {
     width: 100%;
 }
 
-
 /*-----Header styling*/
 
 header {
@@ -29,7 +28,7 @@ header {
     border: 3px solid #fff;
     padding: 1px;
     margin: 10px auto;
-    margin-top: 30px;
+    margin-top: 15px;
     border-radius: 25px;
     display: flex;
     align-items: center;
@@ -130,51 +129,6 @@ a:hover {
     padding: 5px;
 }
 
-.modal-info-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-family: 'Press Start 2P', 'sans-serif';
-    color: #e4000f;
-    background-color: #fff;
-    max-width: 100%;
-    padding: 5px;
-    border: solid 5px #e4000f;
-    border-radius: 25px;
-    text-align: center;
-}
-
-.modal-end-content{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-family: 'Press Start 2P', 'sans-serif';
-    color: #e4000f;
-    background-color: #fff;
-    max-width: 425px;
-    padding: 5px;
-    border: solid 5px #e4000f;
-    border-radius: 25px;
-    text-align: center;
-}
-
-.modal-rank-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-family: 'Press Start 2P', 'sans-serif';
-    color: #e4000f;
-    background-color: #fff;
-    max-width: 425px;;
-    padding: 5px;
-    border: solid 5px #e4000f;
-    border-radius: 25px;
-    text-align: center;
-}
-
 .modal-footer{
     display: flex;
     justify-content: center;
@@ -210,11 +164,19 @@ a:hover {
 .controls button {
     border-radius: 50%;
     width: 50px;
+    margin: 10px;
 }
 
 .controls {
     display: inline-flex;
     vertical-align: bottom;
+    margin: 0;
+    position: relative;
+    justify-content: center;
+    left: 50%;
+    top: 7%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 
 /*-----Main game styling*/
@@ -275,4 +237,16 @@ a:hover {
 .hard-game .memory-card {
     width: calc(16.66% - 7px);
     height: calc(25% - 10px);
+}
+
+/*-----Footer Styling*/
+.footer {
+  position: fixed;
+  margin-top: 5px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(12, 132, 201, 0.5);
+  color: white;
+  text-align: center;
 }
