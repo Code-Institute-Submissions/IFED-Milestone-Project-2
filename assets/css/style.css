@@ -60,6 +60,7 @@ button {
     padding: 10px;
     border: solid;
     color: #0c84c9;
+    background-color: #fff;
     text-decoration: none;
 }
 
@@ -180,7 +181,7 @@ a:hover {
     position: relative;
     justify-content: center;
     left: 50%;
-    top: 7%;
+    top: 5%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
