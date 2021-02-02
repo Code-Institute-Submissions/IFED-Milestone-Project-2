@@ -90,6 +90,13 @@ function checkForMatch() {
         secondCard.dataset.image) {
         disableCards(); // If cards match disable them
         totalMatch += 1;
+        console.log(totalMatch);
+
+        document.getElementsByClassName('easy-game');
+            if (totalMatch == 6) {
+                $('#endModal').modal('show');
+                document.querySelector("#totalTime").innerHTML = minutes + ":" + seconds;
+            }
     }
 
     else {
@@ -123,7 +130,7 @@ function resetBoard() {
     secondCard = null;
 }
 
-//Timer
+//Timer - Code for timer count accredited to a CI student, found at https://github.com/karzuin/MS2/blob/master/assets/js/main.js
 
 let time = 0;
 let timer;
@@ -135,12 +142,6 @@ function startTimer() {
     document.querySelector(".timer").innerHTML = minutes + ":" + seconds;
   }, 1000);
 }
-
-//End game modal
-if (totalMatch === (cards.length)/2) {  
-    $('#endModal').modal('show');
-}
-
 
 cards.forEach(card => card.addEventListener('click', cardTurn)); //Executes cardTurn function
 
