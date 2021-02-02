@@ -44,7 +44,7 @@
     <!-----Timer-->
 
     <div class="timer">
-        <i class="far fa-clock"></i> <span id="minutes">0</span>:<span id="seconds">00</span>
+        <i class="far fa-clock"></i> &nbsp; <span id="minutes">0</span>:<span id="seconds">00</span>
     </div>
 
     <!-----Main game grid (Medium Difficulty - 5 x 4 grid - 20 cards - 10 pairs of Pokemon-->
@@ -135,9 +135,57 @@
     <!-----UI Buttons-->
 
     <div class="controls container row">
-            <button type="button"><i class="fas fa-pause" title="Pause"></i></button>
-            <button type="button"><i class="fas fa-info" title="Help"></i></button>
-            <button type="submit" id="resetBtn"><i class="fas fa-undo-alt" title="Reset"></i></button>
+        <button type="button" id="pauseBtn" data-toggle="modal" data-target="#pauseModal"><i class="fas fa-pause" title="Pause"></i></button>
+        <button type="button" id="helpbutton" data-toggle="modal" data-target="#infoModal"><i class="fas fa-info" title="Help"></i></button>
+        <button type="submit" id="resetBtn"><i class="fas fa-undo-alt" title="Reset"></i></button>
+    </div>
+
+    <!-----Pause button modal-->
+    
+    <div class="modal fade" id="pauseModal" tabindex="-1" aria-labelledby="pauseModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title" id="pauseModalLabel">Game Paused</h2>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" id="pauseClose" class="close-button" data-dismiss="modal" aria-label="Close"><i
+                            class="fas fa-times"></i> Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-----Help button modal-->
+
+    <div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="helpModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="helpModalLabel">Instructions:</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Pokemon Match Up is a matching pairs memory game.
+                        Choose your difficulty to start a game.
+                        The timer begins when you click a tile.
+                        To beat the game, you must match 2 of each tile with the same Pokemon, until there are no tiles
+                        remaining.
+                        Aim to be the fastest on the leaderboard!
+                        To reset the game, press the 'Reset' button.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" id="helpClose" class="close-button" data-dismiss="modal" aria-label="Close"><i
+                            class="fas fa-times"></i> Close</button>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 

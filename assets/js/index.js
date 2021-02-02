@@ -15,6 +15,11 @@ $('#rankbutton').click(function () {
     $('#rankModal').modal('toggle');
 })
 
+//Open Pause
+$('#pauseBtn').click(function () {
+    $('#pauseModal').modal('toggle');
+})
+
 //Close Play menu
 $('#playClose').click(function () {
     $('#playModal').modal('toggle');
@@ -23,6 +28,11 @@ $('#playClose').click(function () {
 //Close Instructions
 $('#helpClose').click(function () {
     $('#infoModal').modal('toggle');
+})
+
+//Close pause
+$('#pauseClose').click(function () {
+    $('#pauseModal').modal('toggle');
 })
 
 //Close Leaderboard

@@ -129,6 +129,10 @@ a:hover {
     padding: 5px;
 }
 
+.modal-body p{
+    font-size: 12px;
+}
+
 .modal-footer{
     display: flex;
     justify-content: center;
@@ -155,8 +159,10 @@ a:hover {
 .timer {
     color: #fff;
     font-weight: 500;
+    font-size: 24px;
     display: flex;
-    position: relative;
+    justify-content: center;
+    margin-bottom: 10px;
 }
 
 /*-----Game UI Buttons*/
