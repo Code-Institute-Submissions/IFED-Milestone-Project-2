@@ -96,6 +96,7 @@ function checkForMatch() {
             if (totalMatch == 6) {
                 $('#endModal').modal('show');
                 document.querySelector("#totalTime").innerHTML = minutes + ":" + seconds;
+                clearInterval(timer);
             }
     }
 
@@ -135,7 +136,7 @@ function resetBoard() {
 let time = 0;
 let timer;
 function startTimer() {
-  timer = setInterval(function () {
+    timer = setInterval(function () {
     time++;
     minutes = ("0" + Math.floor(time / 60)).slice(-2);
     seconds = ("0" + (time % 60)).slice(-2);

@@ -91,11 +91,10 @@ function checkForMatch() {
         disableCards(); // If cards match disable them
         totalMatch += 1;
         console.log(totalMatch);
-
-        document.getElementsByClassName('easy-game');
             if (totalMatch == 12) {
                 $('#endModal').modal('show');
                 document.querySelector("#totalTime").innerHTML = minutes + ":" + seconds;
+                clearInterval(timer);
             }
     }
 
