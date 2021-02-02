@@ -48,6 +48,7 @@ let cardFlipped = false; // Property if card has been flipped
 let lockBoard = false; // Stops more clicks during card flips
 let firstCard, secondCard; // Declare first and second card variables
 let totalMatch = 0; //total number of matches
+let timerOn = true;
 
 //Shuffle Cards//
 (function shuffle() {
@@ -71,6 +72,9 @@ function cardTurn() {
     if (!cardFlipped) {
         cardFlipped = true;
         firstCard = this; //First Memory card
+        if (timerOn === true) {
+            startTimer();
+            timerOn = false}
 
         return;
     }
@@ -119,11 +123,23 @@ function resetBoard() {
     secondCard = null;
 }
 
+//Timer
+
+let time = 0;
+let timer;
+function startTimer() {
+  timer = setInterval(function () {
+    time++;
+    minutes = ("0" + Math.floor(time / 60)).slice(-2);
+    seconds = ("0" + (time % 60)).slice(-2);
+    document.querySelector(".timer").innerHTML = minutes + ":" + seconds;
+  }, 1000);
+}
+
 //End game modal
 if (totalMatch === (cards.length)/2) {  
     $('#endModal').modal('show');
 }
-
 
 
 cards.forEach(card => card.addEventListener('click', cardTurn)); //Executes cardTurn function
