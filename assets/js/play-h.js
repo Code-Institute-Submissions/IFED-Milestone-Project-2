@@ -8,6 +8,7 @@ $('#playbutton').click(function () {
 // Open Instructions modal
 $('#helpbutton').click(function () {
     $('#infoModal').modal('toggle');
+    clearInterval(timer);
 })
 
 //Open Leaderboard
@@ -18,6 +19,7 @@ $('#rankbutton').click(function () {
 //Open Pause
 $('#pauseBtn').click(function () {
     $('#pauseModal').modal('toggle');
+    clearInterval(timer);
 })
 
 //Close Play menu
@@ -28,11 +30,13 @@ $('#playClose').click(function () {
 //Close Instructions
 $('#helpClose').click(function () {
     $('#infoModal').modal('toggle');
+    startTimer();
 })
 
 //Close pause
 $('#pauseClose').click(function () {
     $('#pauseModal').modal('toggle');
+    startTimer();
 })
 
 //Close Leaderboard
