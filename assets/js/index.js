@@ -67,7 +67,7 @@ function cardTurn() {
         return;
     };
 
-    if (('.memory-card') === firstCard) {
+    if (('.memory-card') == firstCard) {
         return; //Stops double click of same card
     };
 
