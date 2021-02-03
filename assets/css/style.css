@@ -19,6 +19,7 @@ body {
 @media only screen and (min-width: 600px) {
     .memory-game {
         max-width: 50vw;
+        min-height: 30vh;;
     }
 }
 
