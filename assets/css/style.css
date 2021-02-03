@@ -214,8 +214,7 @@ a:hover {
 /*-----Main game styling*/
 
 .memory-game {
-    height: 50vh;
-    max-width: 425px;
+    height: 55vh;
     border: 5px solid red;
     background-color: #fff;
     border-radius: 10px;
