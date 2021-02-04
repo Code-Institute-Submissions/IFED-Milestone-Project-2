@@ -215,15 +215,11 @@ ol {
 }
 
 .controls {
-    display: inline-flex;
-    vertical-align: bottom;
-    margin: 0;
-    position: relative;
+    display: flex;
     justify-content: center;
-    left: 50%;
-    top: 5%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    margin-bottom: 10px;
+    padding: 0;
+    margin: 0 auto;
 }
 
 /*-----Main game styling*/
@@ -289,7 +285,6 @@ ol {
 .footer {
   height: auto;
   margin-top: 20px;
-  left: 0;
   bottom: 0;
   width: 100%;
   background-color: rgba(12, 132, 201, 0.5);
