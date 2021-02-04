@@ -12,9 +12,9 @@ $('#helpbutton').click(function () {
 })
 
 function myTime() {
-        var endTime = document.querySelector("#time").innerText;
-        document.getElementById("my-time").innerHTML = endTime;
-        console.log('It works!');
+    let myTime = localStorage.getItem("endTime");
+    document.getElementById("my-time").innerHTML = myTime;
+    console.log(myTime);
 }
 
 //Open Leaderboard
@@ -109,6 +109,8 @@ function checkForMatch() {
             if (totalMatch == 6) {
                 $('#endModal').modal('show');
                 document.querySelector("#totalTime").innerHTML = minutes + ":" + seconds;
+                let endTime = minutes + ":" + seconds;
+                localStorage.setItem("endTime", endTime);
                 clearInterval(timer);
             }
     }

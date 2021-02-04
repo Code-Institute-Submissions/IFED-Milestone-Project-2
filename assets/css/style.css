@@ -51,6 +51,7 @@ header {
 
 /*-----Button styling*/
 
+
 ul {
     list-style-type: none;
     padding: 0;
@@ -190,6 +191,19 @@ a:hover {
     display: flex;
     justify-content: center;
     margin-bottom: 10px;
+}
+
+ol {
+    display: flex;
+}
+
+#my-time {
+    text-align: left;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    flex-direction: column;
 }
 
 /*-----Game UI Buttons*/
