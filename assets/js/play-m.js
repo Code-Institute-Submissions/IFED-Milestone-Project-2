@@ -11,9 +11,18 @@ $('#helpbutton').click(function () {
     clearInterval(timer);
 })
 
+function myTime() {
+    let myTime = localStorage.getItem("endTime");
+    document.getElementById("my-time").innerHTML = myTime;
+    console.log(myTime);
+}
+
 //Open Leaderboard
 $('#rankbutton').click(function () {
     $('#rankModal').modal('toggle');
+    setTimeout(() => {
+        myTime();
+    }, 300)
 })
 
 //Open Pause
@@ -95,9 +104,13 @@ function checkForMatch() {
         disableCards(); // If cards match disable them
         totalMatch += 1;
         console.log(totalMatch);
+
+        document.getElementsByClassName('medium-game');
             if (totalMatch == 10) {
                 $('#endModal').modal('show');
                 document.querySelector("#totalTime").innerHTML = minutes + ":" + seconds;
+                let endTime = minutes + ":" + seconds;
+                localStorage.setItem("endTime", endTime);
                 clearInterval(timer);
             }
     }
