@@ -6,7 +6,7 @@ body {
     background-image: linear-gradient(180deg, #0c84c9, #d0e7f5);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: 110vh;
     width: 100%;
 }
 
@@ -287,12 +287,13 @@ ol {
 
 /*-----Footer Styling*/
 .footer {
-  position: fixed;
-  margin-top: 5px;
+  height: auto;
+  margin-top: 20px;
   left: 0;
   bottom: 0;
   width: 100%;
   background-color: rgba(12, 132, 201, 0.5);
   color: white;
   text-align: center;
+  position: fixed;
 }
