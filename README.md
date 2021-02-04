@@ -46,7 +46,7 @@ The scope of the website is to provide an easily understandable, interactive, an
 In addition, repeat users will be able to view their previous rankings, so the website will entice users to come back.
 The website aims to make use of artwork from the open source PokeAPI to integrate character sprites into the tiles of the matching pairs game.
 
-*** Functional Requirements ***
+**Functional Requirements**
 
 The functional requirements of the website involve displaying a easy to navigate user interface and a variety of options for the user to choose.
 Included in this is multiple difficulty levels which are able to be selected from the landing page.
@@ -60,7 +60,7 @@ The timer must activate once the user starts playing the game, on their first cl
 The final time must display in the modal once the final pair is matched.
 The final time should be displayed on the leaderboard if submitted.
 
-*** Content Requirements ***
+**Content Requirements**
 
 The content of the website includes various images using the PokeAPI API on github; the sprite artwork is used to make the images for the mathing tiles in the game.
 The text is minimal and simple to understand, as is appropriate for the target audience.

@@ -11,9 +11,18 @@ $('#helpbutton').click(function () {
     clearInterval(timer);
 })
 
+function myTime() {
+        var endTime = document.querySelector("#time").innerText;
+        document.getElementById("my-time").innerHTML = endTime;
+        console.log('It works!');
+}
+
 //Open Leaderboard
 $('#rankbutton').click(function () {
     $('#rankModal').modal('toggle');
+    setTimeout(() => {
+        myTime();
+    }, 300)
 })
 
 //Open Pause
