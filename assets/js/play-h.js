@@ -11,13 +11,14 @@ $('#helpbutton').click(function () {
     clearInterval(timer);
 })
 
+//Puts most recent game time in My Times modal
 function myTime() {
     let myTime = localStorage.getItem("endTime");
     document.getElementById("my-time").innerHTML = myTime;
     console.log(myTime);
 }
 
-//Open Leaderboard
+//Open My Times
 $('#rankbutton').click(function () {
     $('#rankModal').modal('toggle');
     setTimeout(() => {
@@ -42,13 +43,13 @@ $('#helpClose').click(function () {
     startTimer();
 })
 
-//Close pause
+//Close Pause
 $('#pauseClose').click(function () {
     $('#pauseModal').modal('toggle');
     startTimer();
 })
 
-//Close Leaderboard
+//Close My Times
 $('#rankClose').click(function () {
     $('#rankModal').modal('toggle');
 })

@@ -142,10 +142,16 @@ The game currently allows cards to be flipped, with non-matching cards being hid
 Several corner cases have been identified, such as rapid succesive clicks causing matching errors and the cards remaining flipped over despite not being matched.
 In addition, double clicking the same card causes the game logic to identify this as a match incorrectly.
 
+6. Game timer
+
+The game timer utilised code created by CI student 'Karzuin' and edited to fit my project requirements. 
+The timer begins on click of the first card of the game and counts up in seconds and minutes. 
+Once the appropriate number of matches have been made (dependingon difficulty selected), the game ends and the final time is displayed in the game end modal.
+Additionally, the most recent time by the user is displayed on the 'My Times' modal on the home page.
+
 ### Upcoming Features
 
-- Countdown timer
-- Leaderboard
+- True Leaderboard showing multiple ranked times
 
 ## Technologies Used
 
@@ -171,6 +177,16 @@ HTML code was validated and edited by using the W3C online code vaidator, which 
 CSS code was validated using the Jigsaw W3 online validation service. This allowed incorrect syntax to be fixed.
 Google Chrome in-browser developer tools have been used throughout the project to test responsiveness on different device sizes.
 JavaScript code was validated using the esprima.org JS syntax validator which confirmed no errors.
+
+The website has been tested on various device sizes and orientations, using Google Chrome developer tools. This allowed elements to be inspected and adjusted to different screen sizes.
+Several display issues were uncovered on larger screen resolutions and subsequently corrected.
+
+**User Story Testing
+
+| User Story | Description | Testing |
+|:----------:|:-----------:|:-------:|
+| 1.| As a user, I want a game that is fun to play. | The game has been tested on all device sizes at all difficulty levels and provides a fun and challenging version of the traditional memory game. 
+The game has been described as fun by friends and family who tested the website, and was also describedas 'nostalgic' with regards to the retro theme and use of Pokemon sprites.
 
 ## Deployment
 
