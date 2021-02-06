@@ -147,7 +147,8 @@ In addition, double clicking the same card causes the game logic to identify thi
 The game timer utilised code created by CI student 'Karzuin' and edited to fit my project requirements. 
 The timer begins on click of the first card of the game and counts up in seconds and minutes. 
 Once the appropriate number of matches have been made (dependingon difficulty selected), the game ends and the final time is displayed in the game end modal.
-Additionally, the most recent time by the user is displayed on the 'My Times' modal on the home page.
+Additionally, the most recent time by the user is displayed on the 'My Times' modal on the home page. 
+However, currently there is no placeholder text if the game has not been played yet.
 
 ### Upcoming Features
 
@@ -181,12 +182,15 @@ JavaScript code was validated using the esprima.org JS syntax validator which co
 The website has been tested on various device sizes and orientations, using Google Chrome developer tools. This allowed elements to be inspected and adjusted to different screen sizes.
 Several display issues were uncovered on larger screen resolutions and subsequently corrected.
 
-**User Story Testing
+**User Story Testing**
 
 | User Story | Description | Testing |
 |:----------:|:-----------:|:-------:|
-| 1.| As a user, I want a game that is fun to play. | The game has been tested on all device sizes at all difficulty levels and provides a fun and challenging version of the traditional memory game. 
-The game has been described as fun by friends and family who tested the website, and was also describedas 'nostalgic' with regards to the retro theme and use of Pokemon sprites.
+| 1.| As a user, I want a game that is fun to play. | The game has been tested on all device sizes at all difficulty levels and provides a fun and challenging version of the traditional memory game. The game has been described as fun by friends and family who tested the website, and was also described as 'nostalgic' with regards to the retro theme and use of Pokemon sprites.
+
+| 2.| As a user, I need to understand the various options of the user interface, in order to effectively navigate the website and choose what I am looking for. | The website has a simple user interface for users to interact with. The home page is comprised of a list of options That allow the user to choose their difficulty, find instructions, and their most recent times. On the individual game pages, the control buttons allow the user to pause the game, check instructions, and restart the game. These are displayed by easily identifiable icons below the main game.
+
+| 3.| As a user, I want to be able to select my difficulty level for the game. | The home page allows the user to select the difficulty of the game by clicking the 'Play' button, which provides three difficulty options; Easy, Medium, and Hard. The differences in difficulty are the images used for each memory game, as well as the number of memory cards in each grid; higher difficulties have a greater number of cards and hence more pairs to match.
 
 ## Deployment
 
