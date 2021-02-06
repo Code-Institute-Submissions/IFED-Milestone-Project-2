@@ -187,25 +187,30 @@ Several display issues were uncovered on larger screen resolutions and subsequen
 | User Story | Description | Testing |
 |:----------:|:-----------:|:-------:|
 | 1.| As a user, I want a game that is fun to play. | The game has been tested on all device sizes at all difficulty levels and provides a fun and challenging version of the traditional memory game. The game has been described as fun by friends and family who tested the website, and was also described as 'nostalgic' with regards to the retro theme and use of Pokemon sprites.
-
 | 2.| As a user, I need to understand the various options of the user interface, in order to effectively navigate the website and choose what I am looking for. | The website has a simple user interface for users to interact with. The home page is comprised of a list of options That allow the user to choose their difficulty, find instructions, and their most recent times. On the individual game pages, the control buttons allow the user to pause the game, check instructions, and restart the game. These are displayed by easily identifiable icons below the main game.
-
 | 3.| As a user, I want to be able to select my difficulty level for the game. | The home page allows the user to select the difficulty of the game by clicking the 'Play' button, which provides three difficulty options; Easy, Medium, and Hard. The differences in difficulty are the images used for each memory game, as well as the number of memory cards in each grid; higher difficulties have a greater number of cards and hence more pairs to match.
+| 4.| As a user, I want to be able to understand how to play the game. | Users are able to view the instructions modals from the home page and game pages. The instructions on the game pages pause the timer if currently active, and continue once closed. The instructions provide simple information on how to play the game.
+| 5.| As a user, I want to be able to pause or quit the game. | The game can be paused by presing the pause button on the game page, which pauses the timer. The timer continues once this is closed. The game can be quit through the header link which redirects to the home page, or reset from the reset button.
+| 6.| As a user, I want to know my game progress and my rank after I have finished the game. | The My Times modal displays the user's most recent time. Difficulties were encountered as having multiple user's game times to be stored would require a database. This was considered beyond the scope of this project and subsequently amended to just display the most recent time.
 
 ## Deployment
 
 The project is deployed using Github Pages.
 The IDE used for this project is Gitpod.
+A local version of the site can be created using the clone method.
+1. First, Locate the Github repository [Here](https://github.com/CosmicAsad/IFED-Milestone-Project-2)
+2. Next to the Gitpod button, click the 'Code' button and copy the URL to clone the repository, under the HTTPS method.
+3. Open Git Bash, and type: 'git clone' followed by the HTTPS URL, and press enter to create the cloned directory.
 
 ## Credits
 
 ### Content
 
 The JavaScript code for the game logic was created by following a video tutorial, and edited according to my own project.
-The source of the video tutorial from FreeCodeCamp can be found here (https://www.youtube.com/watch?v=ZniVgo8U7ek)
+The source of the video tutorial from FreeCodeCamp can be found here [Memory game tutorial](https://www.youtube.com/watch?v=ZniVgo8U7ek)
 
 The creation of the Bootstrap modals applied code originally created on the Bootstrap official website, which was adapted for my project.
-The source for the modal code can be found here: (https://getbootstrap.com/docs/4.0/components/modal/)
+The source for the modal code can be found here: [Modal code](https://getbootstrap.com/docs/4.0/components/modal/)
 
 ### Media
 
