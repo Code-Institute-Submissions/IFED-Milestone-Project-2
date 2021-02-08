@@ -196,7 +196,16 @@ Several display issues were uncovered on larger screen resolutions and subsequen
 ## Deployment
 
 The project is deployed using Github Pages.
+The following steps can be followed to deploy to Github Pages:
+
+1. Log into Github and locate the github repository.
+2. Click on the Settings tab in the repository navigation menu.
+3. Scroll down to the Github Pages section of the page.
+4. Under the Source subheading, choose the appropriate branch for the project. The Master branch was chosen for this project.
+5. Once the Source is selected, save and wait until the deployed site url is generated.
+
 The IDE used for this project is Gitpod.
+
 A local version of the site can be created using the clone method.
 1. First, Locate the Github repository [Here](https://github.com/CosmicAsad/IFED-Milestone-Project-2)
 2. Next to the Gitpod button, click the 'Code' button and copy the URL to clone the repository, under the HTTPS method.
